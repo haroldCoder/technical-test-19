@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Squres from './Squres'
 
 export default function ChessBoard() {
-    const [colorsquare, setColorSquare] = useState("white");
-
     function getSquareColor(index) {
         const row = Math.floor(index / 8);
         const col = index % 8;
